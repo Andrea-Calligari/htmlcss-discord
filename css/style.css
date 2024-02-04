@@ -7,7 +7,7 @@
 menu,
 ul, ol {
     list-style: none;
-    display: inline;
+    
 } 
 img{
     width: 100%;
@@ -15,13 +15,12 @@ img{
 a {
 	text-decoration: none;
 	color: black; 
-    /* currentcolor */
+   
 }
-
 
 /* LAYOUT */
 .container{
-    max-width: 950px;
+    max-width: 100%;
     margin: 0 auto;
 
 }
@@ -34,6 +33,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  
 }
 .ita{
     max-width: 10%;
@@ -51,12 +51,17 @@ a {
 .justify-between {
 	justify-content: space-between;
 }
+.space-cntr{
+    align-items: center;
+}
     
-li{
+.inline{
     display: inline;
-    padding-right: 20px; 
-    
-   
+    padding-right: 25px; 
+}
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .btn{
     border-radius: 20px;
@@ -86,10 +91,13 @@ li{
     color:white;
     background-color:rgba(37, 94, 233,0.3) ;
 }
-
 div > h1{
     font-size: 35px; 
     padding: 20px 20px;
+}
+div > h2{
+    font-size: 30px;
+    padding-bottom: 20px;
 }
 .star{
     background-image:url(../img/stars.svg);
@@ -97,10 +105,8 @@ div > h1{
     
 }
 .social{
-    
+  
 }
-
-
 
 /* UTILITY */
 .item-33 {
@@ -135,12 +141,16 @@ div > h1{
 .pd-20{
     padding: 20px, 0;
 }
+.pd-10{
+    padding: 10px;
+}
 .bg__black{
     background: rgb(24, 24, 34)
 } 
 .bg__grey{
     background: rgb(175, 175, 175);
 }
+
 
 /* DEBUG */
 .debug .container  {
@@ -153,12 +163,11 @@ div > h1{
 }
 .debug  .paper__header {
 	/* padding: 20px 0px; */
-
 	/* background-color: aquamarine; */
 }
 .debug .paper__footer {
     /* background-color: #333; */
-	padding: 20px 0px;
+	/* padding: 20px 0px; */
 	 color: white; 
 }
 .debug .flex > * {
@@ -168,7 +177,6 @@ div > h1{
 .debug section {
     padding: 64px; 
 }
-
 .debug main .flex > * {
     min-height: 200px;
 }
